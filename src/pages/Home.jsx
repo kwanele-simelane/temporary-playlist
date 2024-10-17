@@ -3,7 +3,7 @@ import spotify_icon from "../assets/Spotify_icon.svg";
 
 const Home = () => {
   const handleLogin = () => {
-    window.location.href = "http://localhost:5000/login";
+    window.location.href = "https://playsnap-server.netlify.app/login";
   };
 
   return (
