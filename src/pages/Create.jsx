@@ -52,7 +52,7 @@ const Create = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/playlists/create",
+        "https://playsnap-server.netlify.app/playlists/create",
         {
           accessToken,
           songsMeta: tempData,
@@ -73,7 +73,7 @@ const Create = () => {
   const handlePlaylistDelete = async () => {
     setIsLoading(true);
     try {
-      await axios.post(`http://localhost:5000/playlists/delete/${playlistId}`, {
+      await axios.post(`https://playsnap-server.netlify.app/playlists/delete/${playlistId}`, {
         accessToken,
       });
       setShowMessage(false);
